@@ -1,0 +1,130 @@
+:root{
+    /* Background */
+    --background: #fff;
+    --button: #3A741D;
+
+    /* Primary Colors */
+    --Primary-50: #DDE2DB;
+    --Primary-100: #BBC6B7;
+    --Primary-200: #9AA994;
+    --Primary-300: #788D70;
+    --Primary-400:  #788D70;
+    --Primary-500: #56704C;
+    --Primary-600: #4E6645;
+    --Primary-700: #3D5036;
+    --Primary-800: #2F3E2A;
+    --Primary-900: #242F20;
+
+    /* Secondary Colors */
+    --Secondary-50: #F9FDED;
+    --Secondary-100: #EDFAC8;
+    --Secondary-200: #E4F7AE;
+    --Secondary-300: #D8F489;
+    --Secondary-400: #D1F172;
+    --Secondary-500: #C5EE4F;
+    --Secondary-600: #B3D948;
+    --Secondary-700: #8CA938;
+    --Secondary-800: #6C832B;
+    --Secondary-900: #536421;
+
+    /* Accent Colors */
+    --Accent-50: #F8FCF7;
+    --Accent-100: #EAF7E5;
+    --Accent-200: #DFF3D9;
+    --Accent-300: #D1EDC7;
+    --Accent-400: #C8E9BD;
+    --Accent-500: #BAE4AC;
+    --Accent-600: #A9CF9D;
+    --Accent-700: #84A27A;
+    --Accent-800: #667D5F;
+    --Accent-900: #4E6048;
+
+    /* Neutral Colors */
+    --Neutral-50: #F9F9F9;
+    --Neutral-100: #E8E8E8;
+    --Neutral-200: #B8B8B8;
+    --Neutral-300: #969696;
+    --Neutral-400: #666666;
+    --Neutral-500: #484848;
+    --Neutral-600: #1A1A1A;
+    --Neutral-700: #181818;
+    --Neutral-800: #0A0A0A;
+    --Neutral-900: #050505;
+}
+
+
+main{
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.sign-logo{
+    text-align: center;    
+}
+.sign-logo img{
+    width: 150px;
+}
+.signup-form{
+    border: 1px solid var(--Neutral-200);
+    border-radius: 10px;
+    width: 50%;    
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem auto 1rem;
+    padding: 1rem 0rem;
+    position: relative;
+    min-height: 75vh;
+    
+}
+.form-field{
+    margin: 0.5rem auto;
+    width: 70%;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+.form-field > input{
+    width: 100%;
+    border: 2px solid var(--button);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.form-field > select{
+    width: 100%;
+    border: 2px solid var(--button);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.form-field > .signup-btn{
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--button);
+    color: var(--Accent-50);
+    text-align: center;
+    font-weight: 500;
+}
+.form-field > p{
+    font-size: 12px;
+    text-align: center;
+}
+.cancel-btn{    
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    color: var(--button);
+    font-weight: 900;   
+}
+.cancel-btn img{
+    width: 20px;
+}
+.no-account{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem auto;
+    width: 70%;
+}

@@ -3,15 +3,135 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <title>Group11</title>
+        <link rel="icon" type="image/x-icon" href="images/navbar-images/cart.png">
+        <!-- Start fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;500;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Close fonts -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>SpiceHaven | Home</title>
     </head>
     <body>
-        <header>
-            Welcome to Group 11 Project Page
-        </header>
-        <main>
-            WE ARE HERE TO LEARN ABEG!!!
-        </main>
+        <header class="navigation-header">
+            <nav>
+                <div class="logo-container">
+                    <a href="./index.html"><img src="images/navbar-images/logo.png" alt=""></a>
+                </div>
+                <form class="search">
+                    <span class="search-input"><input type="text"></span>   
+                    <span class="search-btn">Search</span>                     
+                </form>  
+                <div class="navigation-items" id="navigation-items">  
+                    <form class="search2">
+                        <span class="search-input"><input type="text"></span>   
+                        <span class="search-btn">Search</span>                     
+                    </form>                    
+                    <a href="signup.html">
+                        <img src="images/navbar-images/user.png" alt="user">
+                        <span>Account</span>
+                    </a>
+                    <a href="cart.html">
+                        <img src="images/navbar-images/cart.png" alt="user">
+                        <span class="cart">Cart <span class="span-no">0</span></span>
+                    </a>
+                    <a href="#">
+                        <img src="images/navbar-images/help.png" alt="user">
+                        <span>Help</span>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span id="openHam">&#9776;</span>
+                    <span id="closeHam">&#x2716;</span>
+                </div>
+            </nav>
+        </header>            
+        
+        <div class="index-main">
+            <div class="title">CATEGORY</div>
+            <div class="index-top">
+                <div class="card">
+                    <img src="images/index-images/ginger.png" alt="">
+                    <div class="text">Hot Spice</div>
+                </div>
+                <div class="card">
+                    <img src="images/index-images/shombo.png" alt="">
+                    <div class="text">Mild Spice</div>
+                </div>
+                <div class="card">
+                    <img src="images/index-images/leaf.png" alt="">
+                    <div class="text">Herbs</div>
+                </div>
+                <div class="card">
+                    <img src="images/index-images/nutmeg.png" alt="">
+                    <div class="text">Aromatic Spice</div>
+                </div>
+            </div>
+            <div class="index-down">
+                <div class="left-pane">left</div>
+                <div class="right-pane">right</div>
+            </div>
+        </div>
+        
+
+
+        
+        <footer>
+            <div class="foot">
+                <div class="footer-features">
+                    <div class="foot-title">ABOUT SPICE HEAVEN</div>
+                    <div class="foot-list">Contact Us</div>
+                    <div class="foot-list">About Us</div>
+                    <div class="foot-list">Career</div>
+                    <div class="foot-list">Terms & Condition</div>
+                </div>
+                <div class="footer-features">
+                    <div class="foot-title">PAYMENT</div>
+                    <div class="foot-list">Master Card</div>
+                    <div class="foot-list">Visa</div>
+                    <div class="foot-list">Verve</div>
+                </div>
+                <div class="footer-features">
+                    <div class="foot-title">SHOPPING</div>
+                    <div class="foot-list">FAQs</div>
+                    <div class="foot-list">Protection Policy</div>
+                    <div class="foot-list">Return Policy</div>
+                    <div class="foot-list">Delivery</div>
+                </div>
+                <div class="footer-features">
+                    <div class="foot-title">MORE INFO</div>
+                    <div class="foot-list">Tracking Order</div>
+                    <div class="foot-list">Privacy Policy</div>
+                </div>
+                <div class="footer-features">
+                    <div class="foot-title">BECOME A FARMER</div>
+                    <a href="signup.html"><div class="foot-list">Register as a farmer</div></a>
+                    <div class="foot-list">About Us</div>
+                    <div class="foot-list">Career</div>
+                    <div class="foot-list">Terms & Condition</div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="socials">
+                <div class="social-icon">
+                    <img src="images/footer-images/facebook.png" alt="facebook">
+                    <span>facebook.com/spicehaven</span>
+                </div>
+                <div class="social-icon">
+                    <img src="images/footer-images/instagram.png" alt="instagram">
+                    <span>facebook.com/spicehaven</span>
+                </div>
+                <div class="social-icon">
+                    <img src="images/footer-images/twitter.png" alt="twitter"> 
+                    <span>facebook.com/spicehaven</span>
+                </div>                              
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -221,11 +221,13 @@ footer > .socials img{
         position: absolute;
         right: 0;
         top: 58px;
-        background-color: var(--Accent-700);
+        background-color: var(--background);
         width: 100%;
         height: calc(100vh - 58px);
         padding-top: 40px;
         gap: 5vh;
+        margin-top: 0.8rem;
+        border-top: 1px solid var(--button);
     }
 
     footer{

@@ -99,7 +99,7 @@ main{
     padding: 0.5rem;
 }
 
-.form-field > .signup-btn{
+.form-field > a > .signin-btn{
     width: 100%;
     border-radius: 5px;
     padding: 0.5rem;
@@ -127,4 +127,9 @@ main{
     justify-content: space-between;
     margin: 0.5rem auto;
     width: 70%;
+}
+@media screen and (max-width:768px) {
+    .signup-form{
+        width: 95%;
+    }
 }

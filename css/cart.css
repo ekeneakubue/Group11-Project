@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+
+:root{
+    /* Colors */
+    --blackLetter: #000;
+    --green: #3A741D;
+    --lightGreen: #91C47B;
+    --whiteLetter: #fff;
+    /* Font */
+    --interFont: "Inter", sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--interFont);
+}
+
+/* Cart Page Starts */
+section{
+    width: 85%;
+    margin: 60px auto 50px;
+}
+.tag-div p{
+    color: var(--blackLetter);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.tag-div .underline{
+    width: 100%;
+    height: 10px;
+    background-color: var(--green);
+    margin:0 0 70px 0;
+}
+.content-div{
+    width: 100%;
+    border: 1px solid var(--green);
+    margin-bottom:20px;
+}
+.content-div1, .content-div2{
+    display: flex;
+}
+.content-div1 .content-img img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.content-div1 .content-info{
+    margin: 10px;
+}
+.content-info p{
+    font-weight: 600;
+    margin: 10px 0;
+}
+.content-info span{
+    font-size: 0.8em;
+}
+.content-div2{
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 0 30px;
+}
+.content-div2 button{
+    color: var(--green);
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+}
+.addSub-button{
+    display: flex;
+    gap: 45px;
+}
+.addSub-button svg{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.addSub-button span{
+    margin: auto;
+}
+.subTotal{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--green);
+}
+.subTotal-text{
+    padding: 20px;
+}
+.subTotal-text p{
+    font-weight: 600;
+}
+.subTotal-text span{
+    display: block;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+.amount{
+    padding: 20px;
+    margin-right: 30px;
+}
+.amount p{
+    font-weight: 600;
+    text-align: end;
+}
+.amount button{
+    background-color: var(--green);
+    padding: 5px;
+    width: 170px;
+    margin: 20px 0;
+    color: var(--whiteLetter);
+    font-size: 0.8em;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(0.95);
+}
+button:active{
+    transform: scale(0.95);
+}
+/* Cart Page Ends */
+
+/* Checkout Page Starts */
+.checkout-section{
+    display: none;
+}
+.checkout-info{
+    width: 80%;
+    margin: 0 auto;
+}
+.checkout-info div{
+    border: 1px solid var(--green);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.delivery p, .payment p{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.checkout-info label{
+    display: block;
+    margin-bottom: 10px;
+}
+.checkout-info input{
+    accent-color: var(--green);
+}
+.checkout-info button, .approved-section button{
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--green);
+    color: var(--whiteLetter);
+    border: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/* Checkout Page Ends */
+
+/* Approved Page starts */
+.approved-section{
+    display: none;
+}
+.approved-section .tag-div .underline{
+    margin-bottom: 0;
+}
+.approved-section .thanks-main{
+    background-color: var(--lightGreen);
+    text-align: center;
+    margin-top: 0;
+}
+.thanks-main .thanks{
+    padding: 150px 0;
+    letter-spacing: 50px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--whiteLetter);
+}
+.approved-section .checked-svg{
+    padding: 30px 0 0;
+    background-color: var(--whiteLetter);
+    border-radius: 80px 80px 0 0;
+    text-align: center;
+}
+.approved-section svg{
+    width: 30%;
+    height: 30%;
+    color: var(--lightGreen);
+    font-size: large;
+}
+.checked-svg p, .checked-svg span, .checked-svg button{
+    font-family: 'Work Sans', sans-serif;
+}
+.approved-section .checked-svg p{
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0 50px 0;
+}
+.approved-section .checked-svg span{
+    display: block;
+    font-size: 1.5em;
+    margin: 0 0 50px 0;
+}
+/* Approved Page Ends */
+
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    section{
+        width: 95%;
+    }
+    .checkout-info{
+        width: 90%;
+    }
+    .thanks-main .thanks{
+        letter-spacing: 25px;
+        padding: 80px 0;
+    }
+    .content-div1 .content-img img{
+        width: 150px;
+        height: 150px;
+    }
+    .addSub-button{
+        gap: 30px;
+    }
+}

@@ -93,15 +93,14 @@
     width: 100%;
     padding: 1.5rem 3rem 6rem;
     background-color: var(--index-background);
-    position: relative;
+    /* position: relative; */
 }
 .index-main > .title{
-    display: flex;
     margin: 1rem auto 0rem;
     align-items: center;
     background-color: var(--product-title);
     color: var(--background);
-    justify-content: center;
+    text-align: center;
     padding: 1rem 3rem;
     width: 90%;
     border-radius: 3px;
@@ -112,6 +111,7 @@
     margin: 1rem auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .index-top a > .card{
@@ -189,6 +189,7 @@
 }
 .right-body{
     display: flex;
+    flex-wrap: wrap;
     padding: 2rem 2rem;
     width: 100%;
     justify-content: center;
@@ -207,12 +208,8 @@
     text-align: left;
 }
 .pagination{
-    width: 30%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    position: absolute;
-    right: 30%;
-    bottom: 3rem;
     justify-content: center;
 }
 .pagination > span{

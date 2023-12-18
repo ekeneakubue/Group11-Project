@@ -110,7 +110,7 @@ button{
     border-radius: 10px;
     margin: 0rem auto 2rem;
     border: 1px solid var(--Neutral-200);
-    padding: 1rem 6rem;
+    padding: 1rem;
     gap: 1rem;
 }
 .top-pics > .images{
@@ -154,7 +154,7 @@ button{
     .top-pics{
         width: 90%;        
         margin: 0rem auto 2rem;
-        padding: 1rem 4rem;
+        padding: 1rem;
         gap: 1rem;
     }
     .top-pics > .images > img{

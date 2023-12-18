@@ -235,7 +235,7 @@ a{
         width: 100%;
         height: calc(100vh - 58px);
         padding-top: 40px;
-        gap: 5vh;
+        gap: 2.5rem;
         margin-top: 0.8rem;
         border-top: 1px solid var(--button);
         z-index: 1;
